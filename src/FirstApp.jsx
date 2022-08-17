@@ -1,9 +1,11 @@
 import PropTypes from "prop-types"
 
-export const FirstApp = ({title, name}) => {
+export const FirstApp = ({title,subtitle, name}) => {
     return (
         <div>
-            <h1>{title}, {name}</h1>
+            <div data-testid="test-title">{title}</div>
+            <p >{subtitle}</p>
+            <p >{subtitle}</p>
         </div>
     )
 }
