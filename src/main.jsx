@@ -6,6 +6,7 @@ import './app.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <FirstApp  title="Hola soy mauricio" />
+  {/* <FirstApp  title="Hola soy mauricio" />*/}
+  { <CounterApp  value={20} />}
   </React.StrictMode>
 ) 

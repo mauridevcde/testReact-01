@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 export const FirstApp = ({title,subtitle, name}) => {
     return (
         <div>
-            <div data-testid="test-title">{title}</div>
-            <p >{subtitle}</p>
-            <p >{subtitle}</p>
+            <h1 data-testid="test-title">{title}</h1>
+            <p>{subtitle}</p>
+            <p>{subtitle}</p>
         </div>
     )
 }
@@ -16,5 +16,5 @@ FirstApp.propTypes = {
 
 FirstApp.defaultProps = {
     title: "esta es una props default",
-    name: "mauricio"
+    name: "mauricio es default"
 };

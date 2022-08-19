@@ -20,7 +20,7 @@ export const CounterApp = ({ value }) => {
       {<h2>{count}</h2>}
       <button onClick={handledAdd}>+1</button>
       <button onClick={handledRestar}>-1</button>
-      <button onClick={handledReset}>Reset</button>
+      <button id="btnReset" onClick={handledReset}>Reset</button>
     </div>
   );
 };
