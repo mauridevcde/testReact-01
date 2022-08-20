@@ -38,11 +38,9 @@ describe('CounterApp captuando eventos', () => {
         const {container} = render(<CounterApp value={valor} />); 
 
         //primeramente ejecutamos un evento con fireEvent
+        fireEvent.click(screen.getByTestId('btnReset'));
 
-        fireEvent.click( screen.getByRole('button', { name: 'btnReset' }));
-
-
-        expect( screen.getByRole('button', { id: 'btnReset' }) ).toBeTruthy();
+        expect( screen.getByTestId('btnReset') ).toBeTruthy();
     
     })
 
